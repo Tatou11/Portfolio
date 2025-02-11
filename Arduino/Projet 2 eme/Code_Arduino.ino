@@ -25,8 +25,8 @@ const float BaseValue3 = 3.09;
 ////////////////////////////////////////////Variable for the programme
 
 
-int nbBlock = 0; //number of block
-int nbPlaque = 0; //number of plates (Present)
+int nbBlock = 0; //number of block 
+int nbPlaque = 0; //number of plates  (Present)
 //current
 int nbPlaqueActuel = 0; //number of plates 
 
