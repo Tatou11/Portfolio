@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet 2">
+    <title>Projet De FPS Sur Unity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 0px;
+        }
+        .images img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projet de jeu FPS sur Unity</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Retour à l'accueil</a>
+    </nav>
+
+    <section id="presentation">
+        <h2>Présentation du projet</h2>
+        <p>
+            Ce projet est relativement récent, et le but est de créer un FPS sur le moteur Unity. Le projet est encore à un stade très peu avancé, mais le joueur peut déjà se déplacer, sauter et esquiver. Le gameplay repose essentiellement sur le fait de ramasser une arme, tuer quelques IA, puis prendre leurs armes tout en essayant d'esquiver leurs tirs et de ne pas mourir.
+        </p>
+    </section>
+
+    <section id="images">
+        <h2>Vidéo du projet</h2>
+        <div class="images">            
+            <video width="1080" height="720" controls>
+                <source src="Video 1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </div>
+    </section>
+
+    <section id="implementation">
+        <h2>Réalisation du projet</h2>
+        <p>
+            Même si le projet est encore dans un stade assez embryonnaire, il y a tout de même quelques aspects intéressants :<br>
+            Le système le plus avancé à ce jour est le système d'arme. Celui-ci fonctionne avec des Scriptable Objects, qui gèrent presque tous les paramètres de l'arme, permettant des modifications très rapides. De plus, dans le jeu, le joueur tire en utilisant des raycasts, tandis que les IA utilisent de « vraies » balles. Pour éviter les doublons de script, le script d'arme est divisé en deux parties : une pour quand une IA l'utilise et l'autre pour quand le joueur l'utilise, tout en utilisant le plus de variables identiques possible pour les deux types de fonctionnement. <br>
+            Un autre script très important est celui qui gère l'équipement des IA. Celles-ci peuvent, et pourront, s'équiper de divers types d'armes et d’équipements. Le système utilise encore une fois des Scriptable Objects, ainsi que quelques enums pour gérer les types d'équipement.
+        </p>
+        <p>
+            Si vous souhaitez voir un lien vers les scripts, <a href="../Prototype FPS"> cliquez ici</a>.
+        </p>
+    </section>
+
+   
+
+</body>
+</html>
