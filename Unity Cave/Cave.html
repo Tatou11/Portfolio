@@ -82,7 +82,7 @@
     <section id="presentation">
         <h2>Présentation du projet</h2>
         <p>
-            Ce projet est relativement récent, et le but est de créer un FPS sur le moteur Unity. Le projet est encore à un stade très peu avancé, mais le joueur peut déjà se déplacer, sauter et esquiver. Le gameplay repose essentiellement sur le fait de ramasser une arme, tuer quelques IA, puis prendre leurs armes tout en essayant d'esquiver leurs tirs et de ne pas mourir.
+            Ce projet était un prototype se suvrival horrore sur le moteur Unity, celui si était plus avancer, le joueur pouvait ce déplacer, tirer sur des ia , récolter quelque resoucre, avais un inventaire et pouvais faire du craft.
         </p>
     </section>
 
@@ -90,7 +90,7 @@
         <h2>Vidéo du projet</h2>
         <div class="images">            
             <video width="1080" height="720" controls>
-                <source src="Video 1.mp4" type="video/mp4">
+                <source src="Video 2.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas la balise vidéo.
             </video>
         </div>
@@ -99,8 +99,7 @@
     <section id="implementation">
         <h2>Réalisation du projet</h2>
         <p>
-            Même si le projet est encore dans un stade assez embryonnaire, il y a tout de même quelques aspects intéressants :<br>
-            Le système le plus avancé à ce jour est le système d'arme. Celui-ci fonctionne avec des Scriptable Objects, qui gèrent presque tous les paramètres de l'arme, permettant des modifications très rapides. De plus, dans le jeu, le joueur tire en utilisant des raycasts, tandis que les IA utilisent de « vraies » balles. Pour éviter les doublons de script, le script d'arme est divisé en deux parties : une pour quand une IA l'utilise et l'autre pour quand le joueur l'utilise, tout en utilisant le plus de variables identiques possible pour les deux types de fonctionnement. <br>
+            
             Un autre script très important est celui qui gère l'équipement des IA. Celles-ci peuvent, et pourront, s'équiper de divers types d'armes et d’équipements. Le système utilise encore une fois des Scriptable Objects, ainsi que quelques enums pour gérer les types d'équipement.
         </p>
         <p>
