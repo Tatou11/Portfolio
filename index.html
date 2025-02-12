@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Antoine Guns">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px;
+        }
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        /* Centrer le texte pour les sections "À propos" et "Contact" */
+        #about, #contact {
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: left; /* Force le texte des projets à être aligné à gauche */
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Force le texte des projets à être aligné à gauche */
+        }
+        .project img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Image circulaire */
+        }
+        .project h3 {
+            font-size: 22px;
+            margin: 10px 0; /* Marge en haut et en bas du titre */
+        }
+        .project p {
+            margin: 0; /* Enlever la marge par défaut autour du texte */
+            font-size: 16px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guns Antoine</h1>
+        <p>Développeur POO | Siemens</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis diplômé d’un bachelier en informatique industrielle, ainsi que d’un master en sciences de l'informatique.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+
+        <h3>Projets Bachelier</h3>
+        <ul>
+            <li><strong>Projet tapis roulant</strong> : Projet réalisé durant ma deuxieme année de bachelier pour le cours de projet.</li>
+            <li><strong>Projet RFID</strong> : Projet réalisé durant ma troiseme année de bachelier pour le cours de systeme embarquer.</li>
+			<li><strong>Projet WinCC</strong> : Projet réalisé durant ma troiseme année de bachelier pour durant un stage a technocampus.</li>           
+        </ul>
+
+        <h3>Mémoire</h3>
+        <ul>
+            <li><strong>Utilisation de « Self Supervised Learning » dans le contexte de l’imagerie médicale </strong> :Test et comparaison de diverse modèle SSL dans un contexte médicale.</li>
+        </ul>
+
+        <h3>Projet Unity Personnel</h3>
+        <ul>
+            <li><strong>Prototype Cave</strong> : IA capable de jouer au jeu Tic Tac Toe.</li>
+            <li><strong>Prototype FPS</strong> : Implémentation en Unity du jeu de société Hex.</li>            
+        </ul>
+
+        <h3>Projet Arduino Personnel</h3>
+        <ul>
+            <li><strong>Tank</strong> : Création d'un véhicule chenillée entierement commander par arduino.</li>            
+        </ul>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Si vous souhaitez travailler avec moi ou en savoir plus, n'hésitez pas à me contacter !</p>
+        <p>Email: <a href="mailto:gunsantoine@outlook.be">gunsantoine@outlook.be</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/antoine-guns-25b38632b" target="_blank">www.linkedin.com/in/antoine-guns-25b38632b</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Antoine Guns. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
