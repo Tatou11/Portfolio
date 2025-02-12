@@ -41,7 +41,8 @@
             text-decoration: underline;
         }
         section {
-            padding: 50px;
+            padding: 10px;
+            margin-bottom: 0; /* Retirer l'espace entre les sections */
         }
         section h2 {
             font-size: 30px;
@@ -54,12 +55,12 @@
         .projects {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 0px;
             text-align: left; /* Force le texte des projets à être aligné à gauche */
         }
         .project {
             background-color: white;
-            padding: 20px;
+            padding: 0px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left; /* Force le texte des projets à être aligné à gauche */
@@ -91,7 +92,7 @@
 <body>
 
     <header>
-        <h1>Guns Antoine</h1>
+        <h1>Antoine Guns</h1>
         <p>Développeur POO | Siemens</p>
     </header>
 
@@ -109,27 +110,27 @@
     <section id="projects">
         <h2>Mes Projets</h2>
 
-        <h3>Projets Bachelier</h3>
+        <h3>Projets de Bachelier</h3>
         <ul>
-            <li><strong>Projet tapis roulant</strong> : Projet réalisé durant ma deuxieme année de bachelier pour le cours de projet.</li>
-            <li><strong>Projet RFID</strong> : Projet réalisé durant ma troiseme année de bachelier pour le cours de systeme embarquer.</li>
-			<li><strong>Projet WinCC</strong> : Projet réalisé durant ma troiseme année de bachelier pour durant un stage a technocampus.</li>           
+            <li><strong><a href="P2/P2.html">Projet tapis roulant</a></strong> : Projet réalisé durant ma deuxième année de bachelier pour le cours de gestion de projets.</li>
+            <li><strong>Projet RFID</strong> : Projet réalisé durant ma troisième année de bachelier pour le cours de systèmes embarqués.</li>
+            <li><strong>Projet WinCC</strong> : Projet réalisé durant ma troisième année de bachelier pendant un stage à Technocampus.</li>
         </ul>
 
-        <h3>Mémoire</h3>
+        <h3>Mémoire de Master</h3>
         <ul>
-            <li><strong>Utilisation de « Self Supervised Learning » dans le contexte de l’imagerie médicale </strong> :Test et comparaison de diverse modèle SSL dans un contexte médicale.</li>
+            <li><strong>Utilisation de l'« Apprentissage Auto-Supervisé » (Self-Supervised Learning) dans le contexte de l’imagerie médicale</strong> : Test et comparaison de différents modèles SSL dans un contexte médical pour déterminer les cas d'utilisation des methodes SSL.</li>
         </ul>
 
-        <h3>Projet Unity Personnel</h3>
+        <h3>Projets Unity Personnels</h3>
         <ul>
-            <li><strong>Prototype Cave</strong> : IA capable de jouer au jeu Tic Tac Toe.</li>
-            <li><strong>Prototype FPS</strong> : Implémentation en Unity du jeu de société Hex.</li>            
+            <li><strong>Prototype Cave</strong> : Prototype d'un jeu en réalité virtuelle, développé avec Unity.</li>
+            <li><strong>Prototype FPS</strong> : Implémentation d'un jeu de tir à la première personne en Unity.</li>
         </ul>
 
-        <h3>Projet Arduino Personnel</h3>
+        <h3>Projets Arduino Personnels</h3>
         <ul>
-            <li><strong>Tank</strong> : Création d'un véhicule chenillée entierement commander par arduino.</li>            
+            <li><strong>Tank</strong> : Création d’un véhicule chenillé entièrement contrôlé par Arduino.</li>
         </ul>
 
     </section>
@@ -141,9 +142,7 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/antoine-guns-25b38632b" target="_blank">www.linkedin.com/in/antoine-guns-25b38632b</a></p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Antoine Guns. Tous droits réservés.</p>
-    </footer>
+    
 
 </body>
 </html>
