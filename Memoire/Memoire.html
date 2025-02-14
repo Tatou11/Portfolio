@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mémoire">
-    <title>Projet tapis roulant</title>
+    <title>Mémoire</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -83,7 +83,7 @@
         <h2>Présentation du Mémoire</h2>
         <p>
             Ce mémoire a été réalisé en master. Celui-ci porte sur une nouvelle branche de l'IA, le SSL (Self-Supervised Learning). En résumé, il s'agit d'une nouvelle méthode d'apprentissage utilisant très peu de labels.
-            Celui-ci compare les différents modèles de SSL entre eux, ainsi qu'avec un modèle en apprentissage supervisé plus classique, tout cela dans le contexte de l'imagerie médicale, un domaine parfait pour tester les modèles SSL en raison du manque de labels et des données limitées disponibles.
+            Celle-ci compare les différents modèles de SSL entre eux, ainsi qu'avec un modèle en apprentissage supervisé plus classique, tout cela dans le contexte de l'imagerie médicale, un domaine parfait pour tester les modèles SSL en raison du manque de labels et des données limitées disponibles.
             Mon travail a consisté en une grosse partie théorique sur le fonctionnement des réseaux de neurones, ainsi qu'une grande partie également théorique sur les différents modèles SSL, de leur fonctionnement à leur implémentation.
             Bien évidemment, il a fallu implémenter tous ces modèles, réaliser divers programmes pour le traitement des images, pour les tests, etc.
         </p>
@@ -98,7 +98,7 @@
             </div>
 
         </div>
-		<p>Cette image résume le fonctionnement des modèle SSL. Ses méthodes utilisent un principe assez particulier, qui consiste à entraîner le modèle avec des données non labellisées, puis à le raffiner avec des données labellisées. 
+		<p>Cette image résume le fonctionnement des modèles SSL. Ces méthodes utilisent un principe assez particulier, qui consiste à entraîner le modèle avec des données non labellisées, puis à le raffiner avec des données labellisées. 
 			Le modèle sera divisé en deux parties : d'abord la partie encodeur, parfois appelée backbone, qui représente la plus grande partie du réseau de neurones, puis le décodeur, qui est plus petit que l'encodeur.
 Concernant le fonctionnement, nous allons entraîner le modèle deux fois. La première fois sur des données non labellisées, et la seconde fois sur des données labellisées. 
 Je m'explique : lors du premier entraînement, le modèle sera formé sur ce qu'on appelle une tâche prétexte, qui sert uniquement à entraîner la partie encodeur du modèle. 
