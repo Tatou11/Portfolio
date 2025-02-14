@@ -82,10 +82,7 @@
     <section id="presentation">
         <h2>Présentation du projet</h2>
         <p>
-            Ce projet a été réalisé en troisième année de bachelier, soit en 2022. 
-            L'objectif de ce projet était le suivant : un ESP8266 doit lire une carte RFID, interroger une base de données qui indiquera si la carte possède un droit d'accès ou non. En fonction du droit d'accès de la carte, diverses LED vont s'allumer.
-            De plus, une application devait permettre la visualisation des différents logs, ainsi que la modification en temps réel des permissions de chaque carte. Contrairement aux autres projets, celui-ci était individuel.  
-            Ce projet était un regroupement de plusieurs cours.
+            Ce projet a été réalisé en troisième année de bachelier, en 2022. L'objectif de ce projet était le suivant : un ESP8266 devait lire une carte RFID et déterminer si celle-ci possédait ou non un accès. Pour ce faire, il devait interroger une base de données. En fonction du droit d'accès de la carte, diverses LED s'allumaient. De plus, une application devait permettre la visualisation des différents logs, ainsi que la modification en temps réel des permissions de chaque carte. Contrairement aux autres projets, celui-ci était individuel. Ce projet était un regroupement de plusieurs cours (systèmes embarqués, bases de données, développement Android)
         </p>
     </section>
 
@@ -101,9 +98,11 @@
     <section id="implementation">
         <h2>Réalisation du projet</h2>
         <p>
-            L'utilisation d'un ESP8266 était assez simple, car celui-ci fonctionne sur le même principe qu'un Arduino. La transmission entre l'ESP et la base de données était assurée par un programme PHP. Il suffisait juste de connecter l'ESP à un réseau spécifique.
-            L'application Android était assez simple ; elle ne devait comporter que trois pages : une page de connexion (qui utilisait la base de données), une page de logs qui permettait de savoir quelle carte RFID avait tenté de se connecter, ainsi que si la carte avait les bonnes permissions, et une page de permissions qui permettait de modifier ces dernières.
-            J'ai mis à disposition le rapport de projet, celui-ci contient en annexe le code ainsi que des explications plus détaillées.
+            Contrairement aux autres projets réalisés, il fallait utiliser un ESP8266 et non un Arduino, car il possédait un module WiFi indispensable pour la réalisation du projet. Il est très facile de configurer un IDE Arduino pour programmer un ESP, et à part quelques changements, ils sont assez similaires dans leur fonctionnement.
+
+Une fois la carte RFID lue, il fallait communiquer avec une base de données. Celle-ci était hébergée localement sur un PC portable. Pour ce faire, j’ai décidé d’utiliser un simple fichier PHP pour faire la liaison entre l’ESP et la base de données (c’est pour cela qu'il fallait une carte WiFi).
+
+L'application Android était assez simple ; elle ne comportait que trois pages : une page de connexion (qui utilisait la base de données), une page de logs qui permettait de savoir quelle carte RFID avait tenté de se connecter et si la carte avait les bonnes permissions, ainsi qu’une page de permissions qui permettait de modifier ces dernières. J'ai mis à disposition le rapport de projet, qui contient en annexe le code ainsi que des explications bien plus détaillées.
             <a href="Projet_3_2022_GUNSA.pdf">Rapport</a>
         </p>
     </section>  

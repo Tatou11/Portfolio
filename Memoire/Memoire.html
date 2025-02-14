@@ -49,13 +49,13 @@
             margin-top: 20px;
         }
         .images {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 0px;
+            display: flex;
+            gap: -100px;
         }
         .images img {
-            width: 100%;
+            width: 50%; 
+            margin: 0;
+            padding: 0; 
             border-radius: 8px;
         }
         footer {
@@ -89,7 +89,24 @@
         </p>
     </section>
 
-    
+    <section id="images">
+        <h2>Image </h2>
+        <div class="images">            
+            <div>
+                <img src="SSL.png" alt="Self Supervised Learning">
+				
+            </div>
+
+        </div>
+		<p>Cette image résume le fonctionnement des modèle SSL. Ses méthodes utilisent un principe assez particulier, qui consiste à entraîner le modèle avec des données non labellisées, puis à le raffiner avec des données labellisées. 
+			Le modèle sera divisé en deux parties : d'abord la partie encodeur, parfois appelée backbone, qui représente la plus grande partie du réseau de neurones, puis le décodeur, qui est plus petit que l'encodeur.
+Concernant le fonctionnement, nous allons entraîner le modèle deux fois. La première fois sur des données non labellisées, et la seconde fois sur des données labellisées. 
+Je m'explique : lors du premier entraînement, le modèle sera formé sur ce qu'on appelle une tâche prétexte, qui sert uniquement à entraîner la partie encodeur du modèle. 
+Cette tâche est résolue par le décodeur.
+Une fois cette étape terminée, la tâche prétexte sera supprimée, c'est-à-dire que le décodeur sera retiré et remplacé par la véritable tâche que l'on veut accomplir (un autre décodeur). Le modèle sera alors réentraîné lors d'une phase appelée fine tuning.
+</p>
+		
+    </section>
 
     <section id="implementation">
         <h2>Résumé du mémoire</h2>

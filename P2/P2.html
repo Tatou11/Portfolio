@@ -98,8 +98,14 @@
     <section id="implementation">
         <h2>Réalisation du projet</h2>
         <p>
-            Pour détecter les morceaux de bois, nous avions 2 capteurs : un capteur infrarouge pour détecter la présence de quelque chose, et un capteur ultrason pour avoir une distance. Il a été assez simple de calibrer et d'utiliser ces capteurs en tandem pour avoir une détection fiable. Pour l'envoi des données sur un site web, l'Arduino était en communication via le port USB avec un Raspberry Pi qui s'occupait de gérer une base de données (pour avoir un historique des détections), ainsi que du site web. Je me suis personnellement occupé de la partie embarquée et des bases de données. Ce projet était également un concours, et le groupe ayant la meilleure précision recevait un prix. Il se trouve que l’équipe gagnante était la mienne. De plus, le projet était limité dans le temps : nous n'avions que 4 jours et demi pour le réaliser.
-        </p>
+            Le projet était, comme dit plus haut, en équipe de deux, et celui-ci était limité dans le temps. Nous n’avions que 4 jours pour tout réaliser, sans possibilité de travailler chez soi. Pour la détection des morceaux de bois, nous disposions de deux capteurs : un capteur infrarouge, qui servait à déterminer si quelque chose se trouvait devant lui, par exemple des morceaux de bois, et un capteur de distance (ultrasons), qui permettait de mesurer la distance entre lui et un objet (après avoir effectué quelques calculs).
+
+Les capteurs étaient de mauvaise qualité, et il arrivait très souvent qu’ils donnent des valeurs incorrectes. J’ai passé beaucoup de temps à les calibrer et à ajouter des sécurités dans le code pour éviter les erreurs et les faux positifs, comme cela a été le cas pour les autres équipes.
+
+Pour transférer les résultats de l’Arduino vers la tablette, nous devions utiliser un Raspberry Pi, qui contenait également une base de données pour stocker l’historique des passages. L'Arduino était en communication via le port USB avec le Raspberry Pi.
+
+Dans ce projet, je me suis personnellement occupé de toute la partie embarquée. Ce projet était également un concours, et l’équipe ayant la meilleure précision sur cinq tests recevait un prix et une meilleure note. Il s’avère que mon équipe n’a commis aucune erreur, et nous avons donc gagné le concours.
+		</p>
     </section>  
 
 </body>
